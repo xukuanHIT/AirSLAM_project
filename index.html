@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>AirSLAM: An Efficient and Illumination-Robust Point-Line Visual SLAM System</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,28 +52,32 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">AirSLAM: An Efficient and Illumination-Robust Point-Line Visual SLAM System</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://github.com/xukuanHIT" target="_blank">Kuan Xu</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://github.com/yuefanhao" target="_blank">Yue Fanhao</a><sup>2</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://github.com/snakehaihai" target="_blank">Shenghai Yuan</a><sup>1</sup>,</span>
+                    <span class="author-block">
+                      <a href="https://sairlab.org/team/chenw/" target="_blank">Chen Wang</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com.sg/citations?user=Fmrv3J8AAAAJ&hl=en" target="_blank">Lihua Xie</a><sup>1</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup>Nanyang Technological University<br><sup>2</sup>State University of New York at Buffalo</span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2408.03520" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -83,7 +87,7 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -91,11 +95,11 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/sair-lab/AirVO" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -105,7 +109,7 @@
                 </span>
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -113,7 +117,7 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -122,19 +126,18 @@
   </div>
 </section>
 
-
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
+      <!-- <video poster="" id="tree" autoplay controls muted loop height="100%">
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
-      </video>
+      </video> -->
+      <img src="static/images/system_arch_v2.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+      The proposed system consists of three main parts: online stereo VO/VIO, offline map optimization, and online relocalization. 
+      <!-- The VO/VIO module uses the mapping image sequences to build an initial map. Then the initial map is processed offline and an optimized map is outputted. The optimized map can be used for the one-shot relocalization.      </h2> -->
     </div>
   </div>
 </section>
@@ -144,48 +147,211 @@
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-five-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+          In this paper, we present an efficient visual SLAM system designed to tackle both short-term and long-term illumination challenges. Our system adopts a hybrid approach that combines deep learning techniques for feature detection and matching with traditional backend optimization methods. Specifically, we propose a unified CNN that simultaneously extracts keypoints and structural lines. These features are then associated, matched, triangulated, and optimized in a coupled manner. Additionally, we introduce a lightweight relocalization pipeline that reuses the built map, where keypoints, lines, and a structure graph are used to match the query frame with the map. To enhance the applicability of the proposed system to real-world robots, we deploy and accelerate the feature detection and matching networks using C++ and NVIDIA TensorRT. Extensive experiments conducted on various datasets demonstrate that our system outperforms other state-of-the-art visual SLAM systems in illumination-challenging environments. Efficiency evaluations show that our system can run at a rate of 73Hz on a PC and 40Hz on an embedded platform.          </p>
         </div>
       </div>
     </div>
   </div>
+
+
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/jetson_v2.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            <!-- First image description. -->
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/efficiency.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            <!-- Fourth image description. -->
+          </h2>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+</div>
+
 </section>
 <!-- End paper abstract -->
 
 
+<!-- Feature detection -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+          <h2 class="title is-3">Feature Detection</h2>
+        <div class="content has-text-justified">
+          <p>
+          We propose PLNet,  a unified model for both keypoint and line detection. It consists of the shared
+          backbone, the keypoint module, and the line module.
+         </div>
+        <img src="static/images/plnet_v2.jpg" alt="MY ALT TEXT"/>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End feature detection -->
+
+
+<!-- Visual odometry -->
+<section class="section hero is-light">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+          <h2 class="title is-3">Visual (-Inertial) Odometry</h2>
+        <div class="content has-text-justified">
+          <p>
+          We propose a point-line-based stereo visual odometry to build the iitial map.
+          It is a hybrid system utilizing both the learning-based front-end and the traditional optimization backend. 
+          For each stereo image pair, we first employ the proposed PLNet to extract keypoints and line features. 
+          Then a GNN (LightGlue) is used to match keypoints. 
+          In parallel, we associate line features with keypoints and match them using the keypoint matching results. 
+          After that, we perform an initial pose estimation and reject outliers. 
+          Based on the results, we triangulate the 2D features of keyframes and insert them into the map. 
+          Finally, the local bundle adjustment will be performed to optimize points, lines, and keyframe poses. 
+          In the meantime, if an IMU is accessible, its measurements will be processed using the IMU preintegration method, 
+          and added to the initial pose estimation and local bundle adjustment.
+         </div>
+        <img src="static/images/airvio_v6.jpg" alt="MY ALT TEXT"/>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End visual odometry -->
+
+
+<!-- Mapping video -->
+<section class="section hero is-small">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+          <h2 class="title is-3">Mapping with Short-Term Illumination Challenges</h2>
+        <div class="content has-text-justified">
+          <p>
+          We propose a point-line-based stereo visual odometry to build the iitial map.
+  
+         </div>
+         <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/short-term.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <!-- <img src="static/images/airvio_v6.jpg" alt="MY ALT TEXT"/> -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End mapping video -->
+
+
+<!-- Mapping video -->
+<section class="section hero is-light">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+          <h2 class="title is-3">Live Demo of Long-Term Localization</h2>
+        <div class="content has-text-justified">
+          <p>
+          We propose a point-line-based stereo visual odometry to build the iitial map.
+  
+         </div>
+         <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/long-term.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <!-- <img src="static/images/airvio_v6.jpg" alt="MY ALT TEXT"/> -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End mapping video -->
+
+
+
+
+<!-- Visual odometry -->
+
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+  <div class="container">
+      <div class="column is-five-fifths">
+          <h2 class="title is-3">Mapping with Short-Term Illumination Challenges</h2>
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item item-video1">
+              <video poster="" id="video1" autoplay controls muted loop height="100%">
+                <source src="static/videos/carousel1.mp4"
+                type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video2">
+              <video poster="" id="video2" autoplay controls muted loop height="100%">
+                <source src="static/videos/carousel2.mp4"
+                type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video3">
+              <video poster="" id="video3" autoplay controls muted loop height="100%">\
+                <source src="static/videos/carousel3.mp4"
+                type="video/mp4">
+              </video>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section> -->
+
+<!-- End feature detection -->
+
+
+
+
+
+
 <!-- Image carousel -->
-<section class="hero is-small">
+
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
      <div class="item">
-      <!-- Your image here -->
       <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
@@ -194,65 +360,33 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
+
 <!-- End image carousel -->
 
 
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-small">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
+
 
 
 
@@ -260,7 +394,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -270,15 +404,34 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
+      <div class="column is-20">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>
+        @inproceedings{xu2023airvo,
+          title={AirVO: An Illumination-Robust Point-Line Visual Odometry},
+          author={Xu, Kuan and Hao, Yuefan and Yuan, Shenghai and Wang, Chen and Xie, Lihua},
+          booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+          year={2023}
+        }
+
+        @misc{xu2024airslamefficientilluminationrobustpointline,
+          title={AirSLAM: An Efficient and Illumination-Robust Point-Line Visual SLAM System}, 
+          author={Kuan Xu and Yuefan Hao and Shenghai Yuan and Chen Wang and Lihua Xie},
+          year={2024},
+          eprint={2408.03520},
+          archivePrefix={arXiv},
+          primaryClass={cs.RO},
+          url={https://arxiv.org/abs/2408.03520}, 
+        }
+      </code></pre>
+    </div>
     </div>
 </section>
 <!--End BibTex citation -->
